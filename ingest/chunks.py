@@ -26,10 +26,10 @@ def get_embedding(text):
 
 
 if __name__ == "__main__":
+    load_dotenv()
+
     # Set OpenAI API key
     openai.api_key = os.getenv('OPENAI_API_KEY')
-
-    load_dotenv()
 
     # Connect to Chatbot Neo4j
     driver = GraphDatabase.driver(

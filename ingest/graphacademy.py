@@ -122,11 +122,6 @@ if __name__ == "__main__":
     )
     ga_driver.verify_connectivity()
 
-
-    # # Set OpenAI API key
-    # openai.api_key = os.getenv('OPENAI_API_KEY')
-
-
     indexable = get_indexable_pages(ga_driver)
 
     batch_no = 0
