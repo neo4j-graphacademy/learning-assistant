@@ -1,0 +1,6 @@
+database/
+docs-prod/*
+.ipynb_checkpoints/
+.env
+.DS_Store
+__pycache__/
