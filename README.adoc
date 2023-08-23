@@ -7,3 +7,5 @@ The link:ingest/chunks.py[`chunks.py` file] searches for `(:Section)` nodes in t
 These embeddings can be used to find the sections in the documentation that are the most similar a user's input and passed to an LLM to generate an appropriate response.
 
 This data is used to power the Chatbot on link:https://graphacademy.neo4j.com[Neo4j GraphAcademy].
+
+link:https://medium.com/neo4j/building-an-educational-chatbot-for-graphacademy-with-neo4j-f707c4ce311b[Read more about how the chatbot was built], or link:./notebooks/[check out the code].
