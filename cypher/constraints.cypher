@@ -2,6 +2,7 @@ CREATE CONSTRAINT FOR (p:Page) REQUIRE p.url IS UNIQUE;
 CREATE CONSTRAINT FOR (p:Section) REQUIRE p.url IS UNIQUE;
 CREATE CONSTRAINT FOR (p:Image) REQUIRE p.src IS UNIQUE;
 CREATE CONSTRAINT FOR (p:CodeBlock) REQUIRE p.code IS UNIQUE;
+CREATE CONSTRAINT FOR (r:Response) REQUIRE r.id IS UNIQUE;
 
 CALL db.index.vector.createNodeIndex(
   'chatbot-embeddings',  // The name of the index
