@@ -2,3 +2,4 @@ streamlit
 openai
 langchain
 neo4j
+tiktoken
