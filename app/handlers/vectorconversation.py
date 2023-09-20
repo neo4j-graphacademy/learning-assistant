@@ -63,10 +63,13 @@ memory = ConversationBufferMemory(
     output_key='answer'
 )
 
+from tools.databaseinspector import verify_database
+
 qa = ConversationalRetrievalChain.from_llm(
     llm,
     vectorstore.as_retriever(),
     memory=memory,
+    tools = [verify_database],
     return_source_documents=True,
 )
 
